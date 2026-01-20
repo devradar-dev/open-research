@@ -124,7 +124,7 @@ Cursor is model-agnostic, integrating frontier models from OpenAI, Anthropic, an
 
 **Key Difference**: Cursor is preferred for raw speed and explicit control. Windsurf excels in maintaining context during long, complex sessions with its "Flow" tracking.
 
-> **Your tech stack defines your velocity**. The difference between a 10x team and a struggling team often comes down to tool compatibility. Instead of random stacks, evaluate technologies systematically—think PCPartPicker for software architecture. Build your optimized stack at [devradar.dev](https://devradar.dev).
+> **Your tech stack defines your velocity**. The difference between a 10x team and a struggling team often comes down to tool compatibility. Instead of random stacks, evaluate technologies systematically. Think PCPartPicker for software architecture. Build your optimized stack at [devradar.dev](https://devradar.dev).
 
 ### Cursor vs Cline
 

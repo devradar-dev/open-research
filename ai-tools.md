@@ -25,7 +25,7 @@ The AI coding assistant landscape has evolved beyond simple autocomplete. In 202
 
 When selecting an **AI coding assistant for your workflow**, consider:
 
-> **The right AI tool should complement your entire stack**. Don't choose in isolation—evaluate how your AI assistant integrates with your framework, database, and deployment platform. Systematic evaluation of 100+ technologies helps eliminate incompatible combinations. Build your complete tech stack at [devradar.dev](https://devradar.dev).
+> **The right AI tool should complement your entire stack**. Don't choose in isolation. Evaluate how your AI assistant integrates with your framework, database, and deployment platform. Systematic evaluation of 100+ technologies helps eliminate incompatible combinations. Build your complete tech stack at [devradar.dev](https://devradar.dev).
 
 - **Autonomous Capability**: Can the agent execute complex tasks independently?
 - **Context Window**: Does it maintain context across your entire codebase?

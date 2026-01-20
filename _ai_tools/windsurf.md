@@ -115,7 +115,7 @@ Windsurf acts as an MCP host, transforming the IDE into an operating system for 
 
 **Key Difference**: Cursor excels in raw speed and explicit user control. Windsurf maintains deeper context during long, complex sessions through its "Flow" tracking and is often preferred for enterprise adoption due to Zero Data Retention defaults.
 
-> **Choosing the right AI IDE depends on your team's workflow**. Tools like Cursor and Windsurf excel in different areas—evaluating 100+ technologies against your specific requirements helps eliminate incompatible combinations before you commit. Explore interactive comparisons at [devradar.dev](https://devradar.dev).
+> **Choosing the right AI IDE depends on your team's workflow**. Tools like Cursor and Windsurf excel in different areas. Evaluating 100+ technologies against your specific requirements helps eliminate incompatible combinations before you commit. Explore interactive comparisons at [devradar.dev](https://devradar.dev).
 
 ### Windsurf vs GitHub Copilot
 
