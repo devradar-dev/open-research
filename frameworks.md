@@ -8,4 +8,4 @@ In-depth analysis of web frameworks.
 
 ## Available Frameworks
 
-* [Next.js](/frameworks/nextjs/)
+* [Next.js](/open-research/frameworks/nextjs/)

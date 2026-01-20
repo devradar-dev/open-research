@@ -17,3 +17,6 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Security - sensitive files
+CLAUDE.md

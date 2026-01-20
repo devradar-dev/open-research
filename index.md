@@ -8,7 +8,7 @@ Technical Wikipedia for developer tools, frameworks, databases, and AI technolog
 
 ## Categories
 
-* [AI Tools](/ai-tools/)
-* [Frameworks](/frameworks/)
-* [Databases](/databases/)
-* [Hosting](/hosting/)
+* [AI Tools](/open-research/ai-tools/)
+* [Frameworks](/open-research/frameworks/)
+* [Databases](/open-research/databases/)
+* [Hosting](/open-research/hosting/)
