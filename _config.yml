@@ -28,6 +28,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _includes/_custom
 
 # Exclude from processing
 exclude:
@@ -223,3 +224,14 @@ hosting:
 # Atom (RSS) Feed
 atom_feed:
   hide: false
+
+# Header Navigation (Top Menu)
+nav_main:
+  - title: "AI Tools"
+    url: /ai-tools/
+  - title: "Frameworks"
+    url: /frameworks/
+  - title: "Databases"
+    url: /databases/
+  - title: "Hosting"
+    url: /hosting/

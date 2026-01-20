@@ -4,8 +4,6 @@ title: "DevRadar Open Research"
 permalink: /
 ---
 
-![DevRadar Logo](/assets/icon.png){: .align-center}
-
 # Technical Wikipedia for Developer Tools
 
 Comprehensive knowledge base of in-depth technical research on modern development tools, frameworks, databases, and AI technologies.
