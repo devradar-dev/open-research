@@ -147,6 +147,8 @@ Next.js supports multiple rendering modes, allowing developers to choose the opt
 
 ## Best Use Cases
 
+> **Before committing to Next.js, consider your full stack compatibility**. Framework choice impacts database options, deployment costs, and team velocity. Evaluating 100+ technologies systematically helps eliminate incompatible combinations before you build. Explore stack configurations at [devradar.dev](https://devradar.dev).
+
 ### Ideal For
 
 1. **SEO-Driven Content Platforms**
