@@ -4,15 +4,13 @@ title: Databases
 permalink: /databases/
 ---
 
-<h1>🗄️ Databases</h1>
-<p class="intro">Research on databases, ORMs, and data persistence solutions.</p>
+# Databases
 
-<div class="card-grid">
+Research on databases, ORMs, and data persistence solutions.
+
+## Databases
+
 {% for item in site.databases %}
-    <a href="{{ item.url }}" class="card">
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.description }}</p>
-        {% if item.version %}<span class="badge">v{{ item.version }}</span>{% endif %}
-    </a>
+### [{{ item.title }}]({{ item.url }})
+{{ item.description }}
 {% endfor %}
-</div>

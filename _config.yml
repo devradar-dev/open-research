@@ -3,7 +3,7 @@
 title: DevRadar Open Research Archive
 description: Technical Wikipedia for developer tools, frameworks, databases, and AI technologies.
 baseurl: ""
-url: "https://devradar-dev.github.io/open-research"
+url: "https://devradar-dev.github.io"
 
 # Build settings
 markdown: kramdown
@@ -41,25 +41,25 @@ collections:
     output: true
     permalink: /hosting/:title/
 
-# Defaults
+# Defaults - use default layout (minima's)
 defaults:
   - scope:
       path: ""
       type: ai_tools
     values:
-      layout: technology
+      layout: default
   - scope:
       path: ""
       type: frameworks
     values:
-      layout: technology
+      layout: default
   - scope:
       path: ""
       type: databases
     values:
-      layout: technology
+      layout: default
   - scope:
       path: ""
       type: hosting
     values:
-      layout: technology
+      layout: default
