@@ -1,0 +1,8 @@
+# ads.txt - Authorized Digital Sellers
+# Learn more: https://iabtechlab.com/standards/ads-txt/
+
+# Contact: hey@devradar.dev
+# Last Updated: 2026-01-20
+
+# No advertising partners configured yet.
+# This file is prepared for future Google AdSense integration.

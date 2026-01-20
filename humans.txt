@@ -1,0 +1,33 @@
+/* TEAM */
+  Founder: Muhammet Dikyurt
+  Contact: hey@devradar.dev
+  LinkedIn: https://www.linkedin.com/in/dikyurt/
+  Twitter: @dikyurt
+  GitHub: https://github.com/dikyurt
+
+  Company: ECOM YAZILIM VE DANISMANLIK LTD. STI.
+  Location: Istanbul, Turkey
+  MERSIS: 0324117220100001
+
+/* SITE */
+  Name: DevRadar Open Research
+  URL: https://devradar-dev.github.io/open-research/
+  GitHub: https://github.com/devradar-dev/open-research
+  Main Site: https://devradar.dev
+
+/* TECHNOLOGY */
+  Generator: Jekyll 4.x
+  Theme: Minimal Mistakes
+  Hosting: GitHub Pages
+  Language: Markdown, Liquid, HTML/CSS/JS
+
+/* LAST UPDATE */
+  Updated: 2026-01-20
+  Content: 50+ technical research articles on AI tools, frameworks, databases, hosting, and authentication
+
+/* ABOUT */
+  DevRadar is a technical knowledge base for developers, providing comprehensive
+  research and analysis on modern development tools, frameworks, and platforms.
+
+  We believe in transparent, in-depth technical content that goes beyond
+  marketing copy to help developers make informed technology decisions.

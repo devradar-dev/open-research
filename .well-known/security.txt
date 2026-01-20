@@ -1,0 +1,26 @@
+# security.txt - Security Policy & Disclosure
+# Learn more: https://securitytxt.org/
+
+Contact: mailto:hey@devradar.dev
+Expires: 2027-01-20T00:00:00.000Z
+Encryption: https://keys.openpgp.org/vks/v1/by-fingerprint/
+Preferred-Languages: en, tr
+Canonical: https://devradar-dev.github.io/open-research/.well-known/security.txt
+Policy: https://devradar.dev/security
+Acknowledgments: https://devradar.dev/security/hall-of-fame
+
+# Security Disclosure Policy
+
+We believe in responsible security disclosure. If you discover a
+vulnerability in our systems, please:
+
+1. Email details to: hey@devradar.dev
+2. Allow us 90 days to address the issue before public disclosure
+3. Provide sufficient information for us to reproduce the issue
+4. Do not exploit the vulnerability for any reason
+
+# Security Team
+
+- Organization: DevRadar (ECOM YAZILIM VE DANISMANLIK LTD. STI.)
+- Response Time: Within 48 hours
+- Encryption: PGP Key available on request
