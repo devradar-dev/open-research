@@ -15,7 +15,7 @@ teaser: "/assets/logo.svg"
 theme: minimal-mistakes-jekyll
 
 # Logo
-logo: "/assets/logo.svg"
+logo: "/assets/icon.png"
 
 # Site Author
 author:
