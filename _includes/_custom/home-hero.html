@@ -1,54 +1,65 @@
-<!-- Custom Hero Section -->
+<!-- Custom Hero Section - Soft-Tech Color System -->
 <style>
   .home-hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 80px 20px;
+    background: #F8F9FA;
+    color: #1A1A2E;
+    padding: 80px 20px 60px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(4, 22, 93, 0.08);
   }
 
   .home-hero h1 {
-    color: white;
+    color: #04165D;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
+    letter-spacing: -0.02em;
   }
 
   .home-hero p {
-    font-size: 1.25rem;
-    opacity: 0.95;
+    color: #6B7280;
+    font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto 30px;
     line-height: 1.6;
+    font-weight: 400;
   }
 
   .home-hero .hero-links {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     justify-content: center;
     flex-wrap: wrap;
   }
 
   .home-hero .hero-btn {
-    background: white;
-    color: #667eea;
-    padding: 12px 30px;
-    border-radius: 30px;
+    background: #E3987F;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 12px rgba(227, 152, 127, 0.25);
   }
 
   .home-hero .hero-btn:hover {
+    background: #D17A6F;
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 20px rgba(227, 152, 127, 0.35);
   }
 
   .home-hero .hero-btn.secondary {
     background: transparent;
-    color: white;
-    border: 2px solid white;
+    color: #04165D;
+    border: 2px solid rgba(4, 22, 93, 0.2);
+    box-shadow: none;
+  }
+
+  .home-hero .hero-btn.secondary:hover {
+    background: rgba(4, 22, 93, 0.05);
+    border-color: #04165D;
   }
 
   @media (max-width: 768px) {
@@ -57,6 +68,9 @@
     }
     .home-hero p {
       font-size: 1rem;
+    }
+    .home-hero {
+      padding: 50px 20px 40px;
     }
   }
 </style>
