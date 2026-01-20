@@ -4,42 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-
-    <!-- SEO -->
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
     {% seo %}
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
 </head>
 <body>
-    <div class="app-container">
-        <!-- Sidebar -->
-        {% include sidebar.html %}
+    <div class="container">
+        <header>
+            <h1>📡 DevRadar Open Research Archive</h1>
+            <p class="tagline">Technical Wikipedia for Developer Tools</p>
+        </header>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Header -->
-            {% include header.html %}
+        <nav class="nav">
+            <a href="{{ '/ai-tools/' | relative_url }}" class="nav-card">🤖 AI Tools</a>
+            <a href="{{ '/frameworks/' | relative_url }}" class="nav-card">⚛️ Frameworks</a>
+            <a href="{{ '/databases/' | relative_url }}" class="nav-card">🗄️ Databases</a>
+            <a href="{{ '/hosting/' | relative_url }}" class="nav-card">🌐 Hosting</a>
+        </nav>
 
-            <!-- Page Content -->
-            <main class="page-content">
-                {{ content }}
-            </main>
+        {{ content }}
 
-            <!-- Footer -->
-            {% include footer.html %}
-        </div>
+        <footer>
+            <p>Part of <a href="https://devradar.dev" target="_blank">DevRadar.dev</a></p>
+            <p>Open Research Archive • <a href="https://github.com/devradar-dev/open-research" target="_blank">GitHub</a></p>
+        </footer>
     </div>
-
-    <!-- Scripts -->
-    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
 </body>
 </html>
