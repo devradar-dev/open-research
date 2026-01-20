@@ -3,12 +3,14 @@
 title: DevRadar Open Research Archive
 description: Technical Wikipedia for developer tools, frameworks, databases, and AI technologies.
 baseurl: ""
-url: "https://devradar-dev.github.io"
+url: "https://devradar-dev.github.io/open-research"
 
 # Build settings
 markdown: kramdown
-theme: null
-plugins: []
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing
 exclude:
