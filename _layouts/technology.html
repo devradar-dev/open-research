@@ -1,0 +1,169 @@
+---
+layout: default
+---
+
+<article class="technology-page">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span class="separator">/</span>
+        <a href="{{ page.collection | prepend: '/' | relative_url }}">{{ page.category | capitalize }}</a>
+        <span class="separator">/</span>
+        <span class="current">{{ page.title }}</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="tech-header">
+        <div class="tech-meta">
+            {% if page.version %}
+            <span class="version">v{{ page.version }}</span>
+            {% endif %}
+            {% if page.status %}
+            <span class="status status-{{ page.status }}">{{ page.status }}</span>
+            {% endif %}
+            {% if page.license %}
+            <span class="license">{{ page.license }}</span>
+            {% endif %}
+        </div>
+        <h1>{{ page.title }}</h1>
+        {% if page.tagline %}
+        <p class="tagline">{{ page.tagline }}</p>
+        {% endif %}
+        {% if page.official_url %}
+        <a href="{{ page.official_url }}" target="_blank" rel="noopener" class="official-link">
+            Official Documentation →
+        </a>
+        {% endif %}
+    </header>
+
+    <!-- Quick Answer -->
+    {% if page.quick_answer %}
+    <section class="quick-answer">
+        <h2>Quick Answer</h2>
+        <p>{{ page.quick_answer }}</p>
+    </section>
+    {% endif %}
+
+    <!-- Table of Contents -->
+    {% include toc.html %}
+
+    <!-- Content -->
+    <div class="tech-content">
+        {{ content }}
+    </div>
+
+    <!-- Capability Matrix -->
+    {% if page.capabilities %}
+    <section class="capabilities">
+        <h2>Capability Matrix</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Capability</th>
+                    <th>Supported</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for capability in page.capabilities %}
+                <tr>
+                    <td>{{ capability[0] }}</td>
+                    <td class="{% if capability[1] %}supported{% else %}unsupported{% endif %}">
+                        {% if capability[1] %}✓{% else %}✗{% endif %}
+                    </td>
+                    <td>{{ capability[2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    {% endif %}
+
+    <!-- Best For / Avoid For -->
+    <div class="recommendations">
+        {% if page.best_for %}
+        <section class="best-for">
+            <h2>Best For</h2>
+            <ul>
+                {% for use_case in page.best_for %}
+                <li>{{ use_case }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+        {% if page.avoid_for %}
+        <section class="avoid-for">
+            <h2>Avoid For</h2>
+            <ul>
+                {% for use_case in page.avoid_for %}
+                <li>{{ use_case }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+    </div>
+
+    <!-- Related Technologies -->
+    {% if page.related %}
+    <section class="related">
+        <h2>Related Technologies</h2>
+        <div class="related-grid">
+            {% for tech in page.related %}
+            {% assign related_page = site.technologies[tech] %}
+            {% if related_page %}
+            <a href="{{ related_page.url | relative_url }}" class="related-card">
+                <span class="related-name">{{ related_page.title }}</span>
+                <span class="related-category">{{ related_page.category }}</span>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Metadata -->
+    <footer class="tech-footer">
+        <p>
+            Last updated: {{ page.last_updated | default: site.time | date: "%B %e, %Y" }}
+            {% if page.research_date %}
+            <br>Research date: {{ page.research_date }}
+            {% endif %}
+        </p>
+        {% if page.github %}
+        <p><a href="{{ page.github }}" target="_blank" rel="noopener">View on GitHub →</a></p>
+        {% endif %}
+    </footer>
+</article>
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemPage",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | default: site.description }}",
+  "url": "{{ page.url | absolute_url }}",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "{{ page.title }}",
+    "applicationCategory": "{{ page.category | default: 'Software' }}",
+    {% if page.version %}"softwareVersion": "{{ page.version }}",{% endif %}
+    {% if page.license %}"license": "{{ page.license }}",{% endif %}
+    "offers": {
+      "@type": "Offer",
+      "price": "{{ page.pricing | default: '0' }}",
+      "priceCurrency": "USD"
+    }
+  },
+  "mainEntity": {
+    "@type": "TechArticle",
+    "headline": "{{ page.title }} - Technical Analysis",
+    "proficiencyLevel": "Intermediate",
+    "publisher": {
+      "@type": "Organization",
+      "name": "DevRadar",
+      "url": "https://devradar.dev"
+    }
+  }
+}
+</script>

@@ -1,0 +1,15 @@
+{% assign headings = content | split: '<h2' %}
+{% if headings.size > 1 %}
+<nav class="toc" aria-label="Table of Contents">
+    <h3>On This Page</h3>
+    <ul>
+        {% for heading in headings offset: 1 %}
+            {% assign heading_parts = heading | split: '>' %}
+            {% assign heading_text = heading_parts[1] | split: '<' | first | strip_html %}
+            {% if heading_text != '' and heading_text != 'On This Page' %}
+            <li><a href="#{{ heading_text | slugify }}">{{ heading_text }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>
+{% endif %}

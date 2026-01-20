@@ -1,0 +1,105 @@
+# DevRadar Open Research Archive - Jekyll Configuration
+
+# Site Settings
+title: "DevRadar Open Research Archive"
+description: "Technical Wikipedia for developer tools, frameworks, databases, and AI technologies."
+author: "DevRadar"
+
+# GitHub Pages Settings
+baseurl: "" # GitHub Pages subdomain - no baseurl needed
+url: "https://devradar-dev.github.io/open-research"
+
+# Build Settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - .gitignore
+  - .github/
+
+# Collections
+collections_dir: _technologies
+collections:
+  ai-tools:
+    output: true
+    permalink: /ai-tools/:path/
+  frameworks:
+    output: true
+    permalink: /frameworks/:path/
+  databases:
+    output: true
+    permalink: /databases/:path/
+  hosting:
+    output: true
+    permalink: /hosting/:path/
+  auth:
+    output: true
+    permalink: /auth/:path/
+  dev-tools:
+    output: true
+    permalink: /dev-tools/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "ai-tools"
+    values:
+      layout: "technology"
+  - scope:
+      path: ""
+      type: "frameworks"
+    values:
+      layout: "technology"
+  - scope:
+      path: ""
+      type: "databases"
+    values:
+      layout: "technology"
+  - scope:
+      path: ""
+      type: "hosting"
+    values:
+      layout: "technology"
+  - scope:
+      path: ""
+      type: "auth"
+    values:
+      layout: "technology"
+  - scope:
+      path: ""
+      type: "dev-tools"
+    values:
+      layout: "technology"
+
+# SEO Tag Plugin Settings
+twitter:
+  username: devradar_dev
+  card: summary_large_image
+
+social:
+  name: DevRadar
+  links:
+    - https://devradar.dev
+    - https://twitter.com/devradar_dev
+    - https://github.com/devradar-dev
+
+# Sass Settings
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Liquid Settings
+strict_front_matter: true

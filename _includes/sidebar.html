@@ -1,0 +1,61 @@
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <a href="{{ '/' | relative_url }}" class="logo">
+            <span class="logo-icon">📡</span>
+            <span class="logo-text">DevRadar<span class="logo-accent">.archive</span></span>
+        </a>
+    </div>
+
+    <div class="search-box">
+        <input type="search" id="search" placeholder="Search technologies..." aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+        </svg>
+    </div>
+
+    <nav class="sidebar-nav">
+        <div class="nav-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="/ai-tools/" {% if page.collection == 'ai-tools' %}class="active"{% endif %}>
+                    <span class="icon">🤖</span> AI Tools
+                    <span class="count">{{ site.collections['ai-tools'].docs.size }}</span>
+                </a></li>
+                <li><a href="/frameworks/" {% if page.collection == 'frameworks' %}class="active"{% endif %}>
+                    <span class="icon">⚛️</span> Frameworks
+                    <span class="count">{{ site.collections['frameworks'].docs.size }}</span>
+                </a></li>
+                <li><a href="/databases/" {% if page.collection == 'databases' %}class="active"{% endif %}>
+                    <span class="icon">🗄️</span> Databases
+                    <span class="count">{{ site.collections['databases'].docs.size }}</span>
+                </a></li>
+                <li><a href="/hosting/" {% if page.collection == 'hosting' %}class="active"{% endif %}>
+                    <span class="icon">🚀</span> Hosting
+                    <span class="count">{{ site.collections['hosting'].docs.size }}</span>
+                </a></li>
+                <li><a href="/auth/" {% if page.collection == 'auth' %}class="active"{% endif %}>
+                    <span class="icon">🔐</span> Authentication
+                    <span class="count">{{ site.collections['auth'].docs.size }}</span>
+                </a></li>
+                <li><a href="/dev-tools/" {% if page.collection == 'dev-tools' %}class="active"{% endif %}>
+                    <span class="icon">🛠️</span> Dev Tools
+                    <span class="count">{{ site.collections['dev-tools'].docs.size }}</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <div class="nav-section">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="https://devradar.dev" target="_blank" rel="noopener">DevRadar.dev →</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sidebar-footer">
+        <p>Part of <a href="https://devradar.dev" target="_blank" rel="noopener">DevRadar</a></p>
+        <p class="text-muted">Open Research Archive</p>
+    </div>
+</aside>
