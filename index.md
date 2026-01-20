@@ -4,7 +4,7 @@ title: "DevRadar Open Research"
 permalink: /
 ---
 
-![DevRadar Logo](/assets/logo.svg){: .align-center}
+![DevRadar Logo](/assets/icon.png){: .align-center}
 
 # Technical Wikipedia for Developer Tools
 
