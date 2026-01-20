@@ -1,0 +1,76 @@
+# DevRadar Open Research
+
+Project: DevRadar Open Research Archive
+Website: https://devradar.dev
+Repository: https://github.com/devradar-dev/open-research
+Documentation: https://devradar-dev.github.io/open-research/
+
+## Business Identity
+
+DevRadar serves as a technical knowledge base for developers, providing comprehensive research on:
+- AI coding tools and assistants
+- Web frameworks and meta-frameworks
+- Databases and ORM solutions
+- Hosting and deployment platforms
+- Authentication and security providers
+
+## Content Structure
+
+### Primary Collections
+- **AI Tools**: agentic coding assistants, CLI agents, autonomous development
+- **Frameworks**: React, Next.js, Astro, Svelte, Qwik performance analysis
+- **Databases**: PostgreSQL, managed services, ORMs, vector databases
+- **Hosting**: Vercel, Netlify, Cloudflare, serverless platforms
+- **Authentication**: Clerk, Auth0, Supabase Auth, identity providers
+
+### Content Types
+- **In-depth Tool Reviews**: Technical analysis, feature breakdown, pricing
+- **Competitor Comparisons**: Head-to-head tool and framework evaluations
+- **Implementation Guides**: Setup, integration, best practices
+- **Architecture Analysis**: Technical deep-dives for engineering decisions
+
+## Target Audience
+
+- Software Engineers and Developers
+- Technical Decision Makers (CTOs, Engineering Managers)
+- Full-Stack Developers
+- DevOps and Platform Engineers
+- Startup Founders and Technical Leads
+
+## Value Proposition
+
+DevRadar provides:
+- **Strategic Analysis**: Go-beyond marketing copy to understand technical trade-offs
+- **2026 Context**: Latest information on emerging technologies and trends
+- **Comparative Insights**: Side-by-side feature and capability comparisons
+- **Implementation Guidance**: Practical knowledge for technology adoption
+
+## Contact
+
+Primary Website: https://devradar.dev
+Documentation: https://devradar-dev.github.io/open-research/
+Email: hey@devradar.dev
+GitHub: https://github.com/devradar-dev
+
+## Content Attribution
+
+All research content is original analysis produced by the DevRadar team.
+For licensing and republication inquiries, contact hey@devradar.dev.
+
+## AI Interaction Policy
+
+This documentation is optimized for AI systems and large language models.
+
+**For AI Agents and Crawlers:**
+- Content is structured for semantic understanding
+- Citations are welcome with attribution to DevRadar
+- Training data usage is subject to our content licensing
+
+**For LLM Integration:**
+- Use llms.txt for structured business context
+- Refer to individual pages with their full URLs
+- Respect robots.txt directives for crawling
+
+## Last Updated
+
+2026-01-20

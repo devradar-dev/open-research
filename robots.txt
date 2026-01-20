@@ -1,0 +1,30 @@
+# robots.txt for DevRadar Open Research
+
+# Default crawler policy
+User-agent: *
+Allow: /
+
+# Disallow private/sensitive directories
+Disallow: /_site/
+Disallow: /.git/
+Disallow: /.sass-cache/
+Disallow: /.jekyll-cache/
+Disallow: /vendor/
+Disallow: /node_modules/
+
+# Disclude from search (exclude from _config.yml)
+Disallow: /CLAUDE.md
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /LICENSE
+Disallow: /README.md
+
+# AI Search Agents (LMP, GPTBot, etc.)
+User-agent: GPTBot
+Crawl-delay: 1
+
+User-agent: *
+Disallow: /_site/
+
+# Sitemap location
+Sitemap: https://devradar-dev.github.io/open-research/sitemap.xml

@@ -27,3 +27,104 @@
     --st-border-light: rgba(4, 22, 93, 0.06);
   }
 </style>
+
+<!-- 2026 SEO: Schema.org JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://devradar.dev/#organization",
+      "name": "DevRadar",
+      "url": "https://devradar.dev",
+      "logo": "https://devradar-dev.github.io/open-research/assets/icon.png",
+      "sameAs": [
+        "https://twitter.com/devradar_dev",
+        "https://github.com/devradar-dev"
+      ],
+      "description": "Technical knowledge base for developers providing comprehensive research on AI coding tools, web frameworks, databases, and hosting platforms."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://devradar-dev.github.io/open-research/#website",
+      "url": "https://devradar-dev.github.io/open-research/",
+      "name": "DevRadar Open Research",
+      "publisher": {
+        "@id": "https://devradar.dev/#organization"
+      },
+      "description": "Comprehensive knowledge base of in-depth technical research on modern development tools, frameworks, databases, and AI technologies.",
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://devradar-dev.github.io/open-research/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://devradar-dev.github.io/open-research/#webpage",
+      "url": "https://devradar-dev.github.io/open-research/",
+      "name": "DevRadar Open Research - Technical Wikipedia for Developer Tools",
+      "isPartOf": {
+        "@id": "https://devradar-dev.github.io/open-research/#website"
+      },
+      "about": {
+        "@id": "https://devradar.dev/#organization"
+      },
+      "description": "In-depth technical research and analysis of AI coding assistants, web frameworks, databases, hosting platforms, and authentication providers for modern developers.",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://devradar-dev.github.io/open-research/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Tools",
+          "item": "https://devradar-dev.github.io/open-research/ai-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Frameworks",
+          "item": "https://devradar-dev.github.io/open-research/frameworks/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Databases",
+          "item": "https://devradar-dev.github.io/open-research/databases/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Hosting",
+          "item": "https://devradar-dev.github.io/open-research/hosting/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Authentication",
+          "item": "https://devradar-dev.github.io/open-research/auth/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- 2026 SEO: Additional Meta Tags -->
+<meta name="google-site-verification" content="" />
+<meta name="msvalidate.01" content="" />
+<meta name="yandex-verification" content="" />
+<meta name="p:domain_verify" content="" />

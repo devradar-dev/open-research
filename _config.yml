@@ -50,6 +50,7 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
@@ -58,6 +59,7 @@ plugins:
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
@@ -73,6 +75,21 @@ social:
   links:
     - "https://twitter.com/devradar_dev"
     - "https://github.com/devradar-dev"
+  logo: "/assets/icon.png"
+
+# 2026 SEO Enhancements
+lang: en_US
+locale: en_US
+twitter:
+  username: devradar_dev
+  card: summary_large_image
+facebook:
+  app_id:
+  publisher:
+og:
+  image: "/assets/icon.png"
+  type: website
+  locale: en_US
 
 # Analytics
 analytics:
