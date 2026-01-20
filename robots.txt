@@ -1,6 +1,9 @@
 # robots.txt for DevRadar Open Research
+# Last Updated: 2026-01-20
 
-# Default crawler policy
+# -------------------------------------------------
+# General Crawler Policy (All Bots)
+# -------------------------------------------------
 User-agent: *
 Allow: /
 
@@ -12,19 +15,39 @@ Disallow: /.jekyll-cache/
 Disallow: /vendor/
 Disallow: /node_modules/
 
-# Disclude from search (exclude from _config.yml)
+# Disallow development files (not in production)
 Disallow: /CLAUDE.md
 Disallow: /Gemfile
 Disallow: /Gemfile.lock
 Disallow: /LICENSE
 Disallow: /README.md
 
-# AI Search Agents (LMP, GPTBot, etc.)
-User-agent: GPTBot
+# Crawl-delay for respectful crawling
 Crawl-delay: 1
 
-User-agent: *
-Disallow: /_site/
+# -------------------------------------------------
+# AI Search Agents (2026)
+# -------------------------------------------------
+# OpenAI GPTBot - Allow with restrictions
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 1
 
-# Sitemap location
+# Google-Extended (AI training)
+User-agent: Google-Extended
+Disallow: /
+
+# Claude Anthropic AI
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 1
+
+# Common Crawl (used for AI training)
+User-agent: CCBot
+Allow: /
+Crawl-delay: 1
+
+# -------------------------------------------------
+# Sitemap Location
+# -------------------------------------------------
 Sitemap: https://devradar-dev.github.io/open-research/sitemap.xml
