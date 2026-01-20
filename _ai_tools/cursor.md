@@ -1,5 +1,6 @@
 ---
 title: Cursor
+slug: cursor
 description: AI-native fork of VS Code with agentic workflows and multi-file orchestration.
 category: AI Tool
 tags: [ide, vscode-fork, ai-editor]

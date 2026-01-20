@@ -1,5 +1,6 @@
 ---
 title: Next.js
+slug: nextjs
 description: The React Framework for the Web with SSR, SSG, ISR, and React Server Components.
 category: Framework
 tags: [react, ssr, vercel, meta-framework]

@@ -1,5 +1,6 @@
 ---
 title: Claude Code
+slug: claude-code
 description: Claude Code is an autonomous AI coding agent that operates through the CLI, capable of traversing file systems and orchestrating complex multi-file refactors.
 category: AI Tool
 tags: [ai, cli, agent, anthropic]

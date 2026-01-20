@@ -33,16 +33,16 @@ exclude:
 collections:
   ai_tools:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:slug/
   frameworks:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:slug/
   databases:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:slug/
   hosting:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:slug/
 
 # Defaults
 defaults:

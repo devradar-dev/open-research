@@ -1,5 +1,6 @@
 ---
 title: Windsurf
+slug: windsurf
 description: Agentic IDE with Cascade Flow awareness and extensive MCP integrations.
 category: AI Tool
 tags: [ide, cascade, mcp, codeium]
