@@ -29,6 +29,7 @@ include:
   - .htaccess
   - _pages
   - _includes/_custom
+  - _layouts
 
 # Exclude from processing
 exclude:

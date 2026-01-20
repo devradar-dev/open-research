@@ -1,0 +1,73 @@
+<!-- Custom Hero Section -->
+<style>
+  .home-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .home-hero h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .home-hero p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+  }
+
+  .home-hero .hero-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-hero .hero-btn {
+    background: white;
+    color: #667eea;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .home-hero .hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .home-hero .hero-btn.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+
+  @media (max-width: 768px) {
+    .home-hero h1 {
+      font-size: 2rem;
+    }
+    .home-hero p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+<div class="home-hero">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+  <div class="hero-links">
+    <a href="{{ baseurl }}/ai-tools/" class="hero-btn">🤖 AI Tools</a>
+    <a href="{{ baseurl }}/frameworks/" class="hero-btn">⚛️ Frameworks</a>
+    <a href="{{ baseurl }}/databases/" class="hero-btn">🗄️ Databases</a>
+    <a href="https://github.com/devradar-dev/open-research" class="hero-btn secondary">View on GitHub</a>
+  </div>
+</div>

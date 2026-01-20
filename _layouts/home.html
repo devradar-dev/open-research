@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+{% include base_path %}
+{% include _custom/home-hero.html %}
+
+<div class="home">
+
+  {{ content }}
+
+  <section class="categories-grid">
+    <h2 class="section-title">Browse by Category</h2>
+    <div class="cards">
+
+      <!-- AI Tools Card -->
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3 class="card-title">AI Tools</h3>
+        <p class="card-text">Coding assistants, autonomous agents, AI-powered development</p>
+        <ul class="card-list">
+          {% for post in site.ai_tools %}
+            <li><a href="{{ baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <a href="{{ baseurl }}/ai-tools/" class="card-link">View All →</a>
+      </div>
+
+      <!-- Frameworks Card -->
+      <div class="card">
+        <div class="card-icon">⚛️</div>
+        <h3 class="card-title">Frameworks</h3>
+        <p class="card-text">Web frameworks, meta-frameworks, frontend libraries</p>
+        <ul class="card-list">
+          {% for post in site.frameworks %}
+            <li><a href="{{ baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <a href="{{ baseurl }}/frameworks/" class="card-link">View All →</a>
+      </div>
+
+      <!-- Databases Card -->
+      <div class="card">
+        <div class="card-icon">🗄️</div>
+        <h3 class="card-title">Databases</h3>
+        <p class="card-text">Relational databases, NoSQL, ORMs, data persistence</p>
+        <ul class="card-list">
+          {% for post in site.databases %}
+            <li><a href="{{ baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <a href="{{ baseurl }}/databases/" class="card-link">View All →</a>
+      </div>
+
+      <!-- Hosting Card -->
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3 class="card-title">Hosting</h3>
+        <p class="card-text">Cloud platforms, serverless, deployment services</p>
+        <ul class="card-list">
+          {% for post in site.hosting %}
+            <li><a href="{{ baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <a href="{{ baseurl }}/hosting/" class="card-link">View All →</a>
+      </div>
+
+    </div>
+  </section>
+
+  {% if site.show_excerpts != false %}
+    {% for post in site.posts %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endif %}
+
+</div>
