@@ -1,15 +1,14 @@
 ---
-# No layout specified - use default (minima's layout)
-title: DevRadar Open Research Archive
+title: Home
 ---
 
 # DevRadar Open Research Archive
 
-Welcome to the DevRadar Open Research Archive — a comprehensive knowledge base of in-depth technical research reports.
+Technical Wikipedia for developer tools, frameworks, databases, and AI technologies.
 
 ## Categories
 
-- [AI Tools](/ai-tools/)
-- [Frameworks](/frameworks/)
-- [Databases](/databases/)
-- [Hosting](/hosting/)
+* [AI Tools](/ai-tools/)
+* [Frameworks](/frameworks/)
+* [Databases](/databases/)
+* [Hosting](/hosting/)

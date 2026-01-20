@@ -1,65 +1,20 @@
-# DevRadar Open Research Archive - Jekyll Configuration
-
+# Site settings
 title: DevRadar Open Research Archive
-description: Technical Wikipedia for developer tools, frameworks, databases, and AI technologies.
+description: Technical Wikipedia for developer tools
 baseurl: ""
 url: "https://devradar-dev.github.io"
 
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-
-# Exclude from processing
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .github/
 
 # Collections
 collections:
   ai_tools:
     output: true
-    permalink: /ai-tools/:title/
   frameworks:
     output: true
-    permalink: /frameworks/:title/
   databases:
     output: true
-    permalink: /databases/:title/
   hosting:
     output: true
-    permalink: /hosting/:title/
-
-# Defaults - use default layout (minima's)
-defaults:
-  - scope:
-      path: ""
-      type: ai_tools
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: frameworks
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: databases
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: hosting
-    values:
-      layout: default

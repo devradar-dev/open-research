@@ -1,16 +1,9 @@
 ---
-layout: default
 title: Databases
-permalink: /databases/
 ---
 
 # Databases
 
-Research on databases, ORMs, and data persistence solutions.
+Research on databases and data persistence.
 
-## Databases
-
-{% for item in site.databases %}
-### [{{ item.title }}]({{ item.url }})
-{{ item.description }}
-{% endfor %}
+*Coming soon...*

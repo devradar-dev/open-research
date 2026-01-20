@@ -1,16 +1,9 @@
 ---
-layout: default
 title: Hosting
-permalink: /hosting/
 ---
 
-# Hosting Platforms
+# Hosting
 
-Analysis of deployment platforms, hosting providers, and DevOps tools.
+Analysis of deployment platforms.
 
-## Platforms
-
-{% for item in site.hosting %}
-### [{{ item.title }}]({{ item.url }})
-{{ item.description }}
-{% endfor %}
+*Coming soon...*
