@@ -1,10 +1,17 @@
 ---
-title: Hosting
+layout: archive
+title: "Hosting"
 permalink: /hosting/
+sidebar:
+  nav: hosting
 ---
 
-# Hosting
+# Hosting & Deployment
 
-Analysis of deployment platforms.
+Analysis of deployment platforms and hosting services.
 
-*Coming soon...*
+{% for post in site.hosting %}
+  {% include archive-single.html %}
+{% endfor %}
+
+*More hosting research coming soon...*

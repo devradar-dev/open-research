@@ -1,12 +1,15 @@
 ---
-title: Frameworks
+layout: archive
+title: "Frameworks"
 permalink: /frameworks/
+sidebar:
+  nav: frameworks
 ---
 
-# Frameworks
+# Web Frameworks
 
-In-depth analysis of web frameworks.
+In-depth analysis of web frameworks and meta-frameworks.
 
-## Available Frameworks
-
-* [Next.js](/open-research/frameworks/nextjs/)
+{% for post in site.frameworks %}
+  {% include archive-single.html %}
+{% endfor %}

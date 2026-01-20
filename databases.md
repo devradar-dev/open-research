@@ -1,10 +1,17 @@
 ---
-title: Databases
+layout: archive
+title: "Databases"
 permalink: /databases/
+sidebar:
+  nav: databases
 ---
 
 # Databases
 
-Research on databases and data persistence.
+Research on databases and data persistence layers.
 
-*Coming soon...*
+{% for post in site.databases %}
+  {% include archive-single.html %}
+{% endfor %}
+
+*More database research coming soon...*

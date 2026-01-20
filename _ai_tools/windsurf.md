@@ -1,6 +1,7 @@
 ---
 title: Windsurf
 slug: windsurf
+excerpt: "Agentic IDE by Codeium with Cascade Flow tracking, trajectory analysis, and extensive MCP integrations."
 description: Agentic IDE with Cascade Flow awareness and extensive MCP integrations.
 category: AI Tool
 tags: [ide, cascade, mcp, codeium]

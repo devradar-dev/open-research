@@ -1,6 +1,7 @@
 ---
 title: Next.js
 slug: nextjs
+excerpt: "The React Framework with SSR, SSG, ISR, and React Server Components - optimized for SEO and performance."
 description: The React Framework for the Web with SSR, SSG, ISR, and React Server Components.
 category: Framework
 tags: [react, ssr, vercel, meta-framework]

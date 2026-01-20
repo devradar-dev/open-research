@@ -1,80 +1,33 @@
 # Site settings
 title: DevRadar Open Research
-description: Technical Wikipedia for developer tools, frameworks, databases, and AI technologies
-baseurl: "/open-research"
+title_separator: "-"
+subtitle: Technical Wikipedia for Developer Tools
+name: DevRadar
+description: >-
+  Comprehensive knowledge base of in-depth technical research on modern
+  development tools, frameworks, databases, and AI technologies.
 url: "https://devradar-dev.github.io"
+baseurl: "/open-research"
+repository: devradar-dev/open-research
+teaser: "/assets/logo.svg"
 
-# Theme
-theme: just-the-docs
+# Minimal Mistakes settings
+theme: minimal-mistakes-jekyll
 
-# Just the Docs settings
+# Logo
 logo: "/assets/logo.svg"
-favicon_ico: "/assets/favicon.ico"
 
-# Enable or disable the site search
-# Supports true (default) or false
-search_enabled: true
-search:
-  # Split pages into sections that can be searched individually
-  # Supports 1 - 6, default: 2
-  heading_level: 2
-  # Maximum amount of previews per search result
-  # Default: 3
-  previews: 3
-  # Maximum amount of words to display before a matched word in the preview
-  # Default: 5
-  preview_words_before: 5
-  # Maximum amount of words to display after a matched word in the preview
-  # Default: 10
-  preview_words_after: 10
-  # Set the search token separator
-  # Default: /[\s\-/]+/
-  # Example: Enable support for hyphenated search words
-  tokenizer_separator: /[\s/]+/
-  # Display the relative url in search results
-  # Supports true (default) or false
-  rel_url: true
-  # Enable or disable the search button that appears in the bottom right corner of every page
-  # Supports true or false (default)
-  button: true
+# Site Author
+author:
+  name: "DevRadar Team"
+  bio: "Technical research for modern developers"
+  url: "https://devradar.dev"
+  email: "hey@devradar.dev"
 
-# For copy button on code
-enable_copy_code_button: true
-
-# Heading anchor links
-heading_anchors: true
-
-# Aux links for the upper right navigation
-aux_links:
-  "DevRadar.dev":
-    - "https://devradar.dev"
-  "GitHub":
-    - "https://github.com/devradar-dev/open-research"
-
-# Makes the aux links open in a new tab
-aux_links_new_tab: true
-
-# Sort order for navigation links
-nav_sort: case_insensitive
-
-# Back to top link
-back_to_top: true
-back_to_top_text: "Back to top"
-
-# Footer content
-footer_content: "Copyright &copy; 2026 DevRadar.dev. Distributed by <a href=\"https://github.com/devradar-dev/open-research/blob/main/LICENSE\">MIT License</a>."
-
-# Color scheme
-color_scheme: light
-
-# Google Analytics Tracking (optional)
-ga_tracking: UA-2709176-48
-ga_tracking_anonymize_ip: true
-
-# Plugins
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+# Reading Files
+include:
+  - .htaccess
+  - _pages
 
 # Exclude from processing
 exclude:
@@ -91,59 +44,182 @@ exclude:
   - README.md
   - CLAUDE.md
 
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
+
+# SEO
+social:
+  type: Organization
+  name: DevRadar
+  links:
+    - "https://twitter.com/devradar_dev"
+    - "https://github.com/devradar-dev"
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-2709176-48"
+    anonymize_ip: true
+
+# Site Search
+search: true
+search_full_content: true
+
+# RSS
+subscribe:
+  feed: /feed.xml
+
+# Atom Feed
+feed:
+  path: /feed.xml
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 # Collections
 collections:
   ai_tools:
     output: true
-    permalink: /ai-tools/:slug/
+    permalink: /:collection/:slug/
   frameworks:
     output: true
-    permalink: /frameworks/:slug/
+    permalink: /:collection/:slug/
   databases:
     output: true
-    permalink: /databases/:slug/
+    permalink: /:collection/:slug/
   hosting:
     output: true
-    permalink: /hosting/:slug/
+    permalink: /:collection/:slug/
+  docs:
+    output: true
+    permalink: /docs/:path/
 
 # Defaults
 defaults:
+  # AI Tools
   - scope:
       path: ""
-      type: "ai_tools"
+      type: ai_tools
     values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "frameworks"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "databases"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "hosting"
-    values:
-      layout: "default"
+      layout: single
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      sidebar:
+        nav: ai-tools
 
-# Just the Docs navigation
-nav:
+  # Frameworks
+  - scope:
+      path: ""
+      type: frameworks
+    values:
+      layout: single
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      sidebar:
+        nav: frameworks
+
+  # Databases
+  - scope:
+      path: ""
+      type: databases
+    values:
+      layout: single
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      sidebar:
+        nav: databases
+
+  # Hosting
+  - scope:
+      path: ""
+      type: hosting
+    values:
+      layout: single
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      sidebar:
+        nav: hosting
+
+  # Pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
+  # Docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+
+# Navigation Sidebar data
+ai-tools:
   - title: AI Tools
     children:
-      - title: Claude Code
+      - title: "Claude Code"
         url: /ai-tools/claude-code/
-      - title: Cursor
+      - title: "Cursor"
         url: /ai-tools/cursor/
-      - title: Windsurf
+      - title: "Windsurf"
         url: /ai-tools/windsurf/
+
+frameworks:
   - title: Frameworks
     children:
-      - title: Next.js
+      - title: "Next.js"
         url: /frameworks/nextjs/
+
+databases:
   - title: Databases
     children: []
+
+hosting:
   - title: Hosting
     children: []
+
+# Atom (RSS) Feed
+atom_feed:
+  hide: false

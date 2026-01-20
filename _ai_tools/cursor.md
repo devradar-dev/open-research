@@ -1,6 +1,7 @@
 ---
 title: Cursor
 slug: cursor
+excerpt: "AI-native fork of VS Code with Composer multi-file orchestration and .cursorrules for project-specific AI behavior."
 description: AI-native fork of VS Code with agentic workflows and multi-file orchestration.
 category: AI Tool
 tags: [ide, vscode-fork, ai-editor]

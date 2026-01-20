@@ -1,6 +1,7 @@
 ---
 title: Claude Code
 slug: claude-code
+excerpt: "Autonomous AI coding agent by Anthropic with CLI-first workflow, 200K context window, and multi-file refactoring capabilities."
 description: Claude Code is an autonomous AI coding agent that operates through the CLI, capable of traversing file systems and orchestrating complex multi-file refactors.
 category: AI Tool
 tags: [ai, cli, agent, anthropic]

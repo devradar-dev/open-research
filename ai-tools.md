@@ -1,14 +1,15 @@
 ---
-title: AI Tools
+layout: archive
+title: "AI Tools"
 permalink: /ai-tools/
+sidebar:
+  nav: ai-tools
 ---
 
-# AI Tools
+# AI Coding Tools
 
-Comprehensive research on AI coding tools.
+Comprehensive research on AI-powered development tools and coding assistants.
 
-## Available Tools
-
-* [Claude Code](/open-research/ai-tools/claude-code/)
-* [Cursor](/open-research/ai-tools/cursor/)
-* [Windsurf](/open-research/ai-tools/windsurf/)
+{% for post in site.ai_tools %}
+  {% include archive-single.html %}
+{% endfor %}
