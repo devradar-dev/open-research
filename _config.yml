@@ -7,11 +7,8 @@ url: "https://devradar-dev.github.io"
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+theme: null
+plugins: []
 
 # Exclude from processing
 exclude:
