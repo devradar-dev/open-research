@@ -1,5 +1,6 @@
 ---
 title: Frameworks
+permalink: /frameworks/
 ---
 
 # Frameworks

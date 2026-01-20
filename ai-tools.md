@@ -1,5 +1,6 @@
 ---
 title: AI Tools
+permalink: /ai-tools/
 ---
 
 # AI Tools

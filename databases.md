@@ -1,5 +1,6 @@
 ---
 title: Databases
+permalink: /databases/
 ---
 
 # Databases

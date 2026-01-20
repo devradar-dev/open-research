@@ -1,5 +1,6 @@
 ---
 title: Hosting
+permalink: /hosting/
 ---
 
 # Hosting
