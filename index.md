@@ -42,6 +42,15 @@ permalink: /
     </div>
     <span class="explore-arrow">→</span>
   </a>
+
+  <a href="{{ site.baseurl }}/auth/" class="explore-card">
+    <div class="explore-icon">🔐</div>
+    <div class="explore-content">
+      <h3>Authentication</h3>
+      <p>Identity providers, auth protocols, security solutions</p>
+    </div>
+    <span class="explore-arrow">→</span>
+  </a>
 </section>
 
 <style>

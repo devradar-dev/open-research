@@ -115,19 +115,19 @@ kramdown:
 collections:
   ai_tools:
     output: true
-    permalink: /:collection/:slug/
+    permalink: /ai-tools/:slug/
   frameworks:
     output: true
-    permalink: /:collection/:slug/
+    permalink: /frameworks/:slug/
   databases:
     output: true
-    permalink: /:collection/:slug/
+    permalink: /databases/:slug/
   hosting:
     output: true
-    permalink: /:collection/:slug/
-  docs:
+    permalink: /hosting/:slug/
+  auth:
     output: true
-    permalink: /docs/:path/
+    permalink: /auth/:slug/
 
 # Defaults
 defaults:
@@ -183,6 +183,19 @@ defaults:
       sidebar:
         nav: hosting
 
+  # Auth
+  - scope:
+      path: ""
+      type: auth
+    values:
+      layout: single
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      sidebar:
+        nav: auth
+
   # Pages
   - scope:
       path: ""
@@ -222,6 +235,10 @@ hosting:
   - title: Hosting
     children: []
 
+auth:
+  - title: Authentication
+    children: []
+
 # Atom (RSS) Feed
 atom_feed:
   hide: false
@@ -236,3 +253,5 @@ nav_main:
     url: /databases/
   - title: "Hosting"
     url: /hosting/
+  - title: "Authentication"
+    url: /auth/
